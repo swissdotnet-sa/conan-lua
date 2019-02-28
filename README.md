@@ -4,25 +4,19 @@ Conan package for [lua](https://www.lua.org)
 
 The packages generated with this **conanfile** can be found on [bintray](https://bintray.com/conan-community).
 
-## Package Status
-
-| Bintray | Travis | Appveyor |
-|---------|--------|----------|
-|[ ![Download](https://api.bintray.com/packages/zimmerk/conan/lua%3Azimmerk/images/download.svg) ](https://bintray.com/zimmerk/conan/lua%3Azimmerk/_latestVersion)|[![Build Status](https://travis-ci.org/AtaLuZiK/conan-lua.svg?branch=release%2F5.3.4)](https://travis-ci.org/AtaLuZiK/conan-lua)|[![Build status](https://ci.appveyor.com/api/projects/status/0s9w9tb38kvj4o8r/branch/release/5.3.4?svg=true)](https://ci.appveyor.com/project/AtaLuZiK/conan-lua/branch/release/5.3.4)|
-
 ## Reuse the packages
 
 ### Basic setup
 
 ```
-conan install lua/5.3.4@zimmerk/stable
+conan install lua/5.3.3@swissdotnet/stable
 ```
 
 ### Project setup
 
 ```
 [requires]
-lua/5.3.4@zimmerk/stable
+lua/5.3.3@swissdotnet/stable
 
 [options]
 # Take a look for all avaliable options in conanfile.py
