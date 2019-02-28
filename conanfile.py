@@ -6,7 +6,7 @@ from conans import CMake, ConanFile, tools
 
 class LuaConan(ConanFile):
     name = "lua"
-    version = "5.3.4"
+    version = "5.3.3"
     license = "https://www.lua.org/license.html"
     url = "https://www.lua.org/ftp/"
     description = "Lua is a powerful, efficient, lightweight, embeddable scripting language."
@@ -30,7 +30,7 @@ class LuaConan(ConanFile):
     def source(self):
         zip_name = "lua-%s.tar.gz" % self.version
         tools.download("https://www.lua.org/ftp/%s" % zip_name, zip_name)
-        tools.check_md5(zip_name, "53a9c68bcc0eda58bdc2095ad5cdfc63")
+        tools.check_md5(zip_name, "703f75caa4fdf4a911c1a72e67a27498")
         tools.unzip(zip_name)
         os.unlink(zip_name)
 
