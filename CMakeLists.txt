@@ -57,7 +57,7 @@ if(UNIX)
   link_libraries(m)
 endif(UNIX)
 
-add_library(lua SHARED ${LUA_LIB_SOURCES})
+add_library(lua STATIC ${LUA_LIB_SOURCES})
 target_compile_definitions(lua
   PUBLIC LUA_COMPAT_5_2
 )
